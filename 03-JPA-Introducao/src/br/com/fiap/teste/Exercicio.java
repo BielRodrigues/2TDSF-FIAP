@@ -27,11 +27,8 @@ public class Exercicio {
 //		System.out.println(produtoPesquisar.getNome());
 		
 		//Atualizar
-//		Produto produtoAtualiza = em.find(Produto.class, 1);
-//		produtoAtualiza.setNome("Coca-cola");
-		
-		Produto produto = new Produto(1 ,"Vinho", 2, Estado.NOVO, new GregorianCalendar(2019, Calendar.DECEMBER, 5), new GregorianCalendar(2019, Calendar.JANUARY, 22), 8, null);
-		em.merge(produto);
+//		Produto produto = new Produto(1 ,"Vinho", 2, Estado.NOVO, new GregorianCalendar(2019, Calendar.DECEMBER, 5), new GregorianCalendar(2019, Calendar.JANUARY, 22), 8, null);
+//		em.merge(produto);
 		
 		//Remover
 		// Foi deletado o produto com o ID 2
