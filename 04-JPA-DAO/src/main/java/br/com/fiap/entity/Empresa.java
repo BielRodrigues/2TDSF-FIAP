@@ -31,9 +31,10 @@ import javax.persistence.TemporalType;
 @Table(name="T_EMPRESA")
 @SequenceGenerator(name="empresa", sequenceName="SQ_T_EMPRESA", allocationSize=1)
 public class Empresa {
+	
 	@Id
 	@Column(name="cd_empresa")
-	@GeneratedValue(generator="cliente", strategy=GenerationType.SEQUENCE)
+	@GeneratedValue(generator="empresa", strategy=GenerationType.SEQUENCE)
 	private int codigo;
 	
 	@Column(name="nm_empresa", nullable=false, length=50)
@@ -66,6 +67,10 @@ public class Empresa {
 		this.dataAbertura = dataAbertura;
 		this.status = status;
 		this.cnpj = cnpj;
+	}
+	
+	public Empresa() {
+		super();
 	}
 
 	public int getCodigo() {
