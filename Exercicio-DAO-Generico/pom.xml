@@ -1,14 +1,22 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>05-Exercicio-JPA</groupId>
-  <artifactId>05-Exercicio-JPA</artifactId>
+  <groupId>Exercicio-DAO-Generico</groupId>
+  <artifactId>Exercicio-DAO-Generico</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <build>
     <sourceDirectory>src</sourceDirectory>
+    <resources>
+      <resource>
+        <directory>src</directory>
+        <excludes>
+          <exclude>**/*.java</exclude>
+        </excludes>
+      </resource>
+    </resources>
     <plugins>
       <plugin>
         <artifactId>maven-compiler-plugin</artifactId>
-        <version>3.7.0</version>
+        <version>3.8.0</version>
         <configuration>
           <source>1.8</source>
           <target>1.8</target>
@@ -17,7 +25,7 @@
     </plugins>
   </build>
   
-  	<dependencies>
+    	<dependencies>
 		<dependency>
 			<groupId>org.hibernate</groupId>
 			<artifactId>hibernate-core</artifactId>
@@ -32,5 +40,6 @@
 			<systemPath>E:/terceiro_semestre/drivers/ojdbc8.jar</systemPath>
 		</dependency>
 	</dependencies> 
+    
   
 </project>
